@@ -13,7 +13,7 @@ def test_room_paths():
     center = Room("Center", "Test room in the center.")
     north = Room("North", "Test room in the north.")
     south = Room("South", "Test room on the south.")
-
+   
     center.add_paths({'north': north, 'south': south})
     assert_equal(center.go('north'), north)
     assert_equal(center.go('south'), south)
@@ -32,27 +32,9 @@ def test_map():
     assert_equal(start.go('down').go('up'), start)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# start.path={'west',west}
+# west.path={'east',east}
+# down.path={'up',up}
 
 
 
